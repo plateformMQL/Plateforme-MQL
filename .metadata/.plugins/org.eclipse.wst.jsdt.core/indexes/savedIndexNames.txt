@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3648559018.index
+3832044045.index
+4240382925.index
+3395769558.index
+3213517643.index

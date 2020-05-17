@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea0d9f17-a5ed-41a6-8e83-1ddfe9752ead" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bttMfk4rA9gjRONjmepYx0oYmf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/js" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\Plateforme MQL\WebContent\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\Plateforme MQL\WebContent\js" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea0d9f17-a5ed-41a6-8e83-1ddfe9752ead" name="Default Changelist" comment="" />
+      <created>1589463171669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589463171669</updated>
+      <workItem from="1589463175471" duration="2384000" />
+      <workItem from="1589552413403" duration="13494000" />
+      <workItem from="1589583510629" duration="3098000" />
+      <workItem from="1589588121565" duration="19143000" />
+      <workItem from="1589668509238" duration="20306000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1589585272319">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1589585272319" />
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589609311751">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589609311751" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1589609878406">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589609878406" />
+    <state x="667" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589463180452">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="667" y="174" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589463180452" />
+    <state x="297" y="153" key="run.anything.popup" timestamp="1589684507840">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1589684507840" />
+    <state x="421" y="154" key="save.file.as.template.dialog" timestamp="1589582907978">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="154" key="save.file.as.template.dialog/0.0.1280.689@0.0.1280.689" timestamp="1589582907978" />
+    <state x="510" y="260" key="save.project.as.template.dialog" timestamp="1589586201573">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="510" y="260" key="save.project.as.template.dialog/0.0.1280.689@0.0.1280.689" timestamp="1589586201573" />
+  </component>
+</project>
