@@ -86,8 +86,37 @@ function test(){
 
 var laureate = new Laureate("a1", "a2", "a3", "a4", "a5");
 laureate.jobs.push(new Job("b1", "b2","b3", "b4", "b5", "b6", "b7"));
-console.log(laureate);
+//console.log(laureate);
 
+    let activityDAO = new ActivityDAO();
+    let eventDAO = new EventDAO();
+    let jobDAO = new JobDAO();
+    let laureateDAO = new LaureateDAO();
+    let partnerDAO= new PartnerDAO();
+    let professorDAO = new ProfessorDAO();
+    let studentDAO = new StudentDAO();
+    let formationDAO = new FormationDAO();
+    var business = new FormationServ(activityDAO, eventDAO, formationDAO, jobDAO, laureateDAO, partnerDAO, professorDAO, studentDAO);
+
+
+    var formation = new Formation("mql", "master ", "qualité logiciel", "2005");
+    var job = new Job("eeeeee", "fzffzefzef", "zfeezfzefezfq", "zdzdazdaz", "adzdzdz", "sdsddsd", "zdqdqdqd");
+    var activ1 = new Activity("remise", "remise2", "src", "ffggghgg","ddddd");
+    var student = new Student("rhita", "essafi", "rhita@gmail.com", "fes", "smi", "neffdd", "ddddfds");
+    var prof = new Professor("choucho", "chouchooo", "097464", "chouchou@email.com", "effze", "php", "encadrant");
+    var ev = new Event("rhita", "essafi", "ddzdzef", "qzdqzdqzd", "dfzefze", "dffzefsfsf", "uiuihliul");
+    var part = new Partner("capegimin", "adegrege", "develp", "src", "dzdfezfzezef", "dzdazdazdd", "dzddzd");
+
+    formation.activities.push(activ1);
+    formation.events.push(ev);
+    formation.laureates.push(laureate);
+    formation.partners.push(part);
+    formation.professors.push(prof);
+    formation.students.push(student);
+
+    var form =business.addFormation(formation);
+
+    console.log(formation);
 }
 
 

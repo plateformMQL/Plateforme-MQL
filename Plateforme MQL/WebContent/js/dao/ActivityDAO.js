@@ -29,7 +29,6 @@ class ActivityDAO {
     updateActivity(id, activity) {
         for (let i = 0; i < this.activities.length; i++) {
             if (this.activities[i].id == id) {
-                //this.activities[i].update(activity);
                 this.activities[i] = activity;
                 this.activities[i].id = id;
             }

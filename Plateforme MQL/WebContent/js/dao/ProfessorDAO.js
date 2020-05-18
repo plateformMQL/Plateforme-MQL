@@ -1,4 +1,7 @@
 class ProfessorDAO {
+
+    value = 0;
+
     constructor() {
         this.professors = [];
     }
@@ -18,23 +21,25 @@ class ProfessorDAO {
     }
 
     addProfessor(professor) {
+        this.value++;
+        professor.id = this.value;
         this.professors.push(professor);
     }
 
 
     updateProfessor(id, professor) {
-       for (let i = 0; i < this.professors.length; i++) {
-          if(this.professors[i].id == id){
-             //this.activities[i].update(activity);
-             this.professors[i].value = professor.value;
-          }
-       }
+        for (let i = 0; i < this.professors.length; i++) {
+            if (this.professors[i].id == id) {
+                this.professors[i] = professor;
+                this.professors[i].id = id;
+            }
+        }
     }
 
     removeProfessor(id) {
-       for (let i = 0; i <this.professors.length ; i++) {
-          console.log(this.professors[i]);
-       }
+        for (let i = 0; i < this.professors.length; i++) {
+            console.log(this.professors[i]);
+        }
     }
 
 }

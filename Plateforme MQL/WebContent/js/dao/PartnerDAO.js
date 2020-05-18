@@ -1,5 +1,7 @@
 class PartnerDAO {
 
+    value = 0;
+
     constructor() {
         this.partners = [];
     }
@@ -19,6 +21,8 @@ class PartnerDAO {
 
 
     addPartner(partner) {
+        this.value++;
+        partner.id = this.value;
         this.partners.push(partner);
     }
 
@@ -26,7 +30,8 @@ class PartnerDAO {
     updatePartner(id, partner) {
         for (let i = 0; i < this.partners.length; i++) {
             if (this.partners[i].id == id) {
-                this.partners[i].value = partner.value;
+                this.partners[i] = partner;
+                this.partners[i].id = id;
             }
         }
     }

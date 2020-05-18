@@ -1,4 +1,7 @@
 class LaureateDAO {
+
+    value = 0;
+
     constructor() {
        this.laureates = [];
     }
@@ -18,14 +21,16 @@ class LaureateDAO {
     }
 
     addLaureate(laureate) {
+        this.value++;
+        laureate.id = this.value;
         this.laureates.push(laureate);
     }
 
     updateLaureate(id, laureate) {
         for (let i = 0; i < this.laureates.length; i++) {
             if(this.laureates[i].id == id){
-                //this.laureates[i].update(laureate);
-                this.laureates[i].value = laureate.value;
+                this.laureates[i] = laureate;
+                this.laureates[i].id = id;
             }
         }
     }

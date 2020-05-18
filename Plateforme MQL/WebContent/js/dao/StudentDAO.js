@@ -1,5 +1,7 @@
 class StudentDAO {
 
+    value = 0;
+
     constructor() {
         this.students = [];
     }
@@ -11,7 +13,7 @@ class StudentDAO {
 
     getOneStudent(id) {
         for (let i = 0; i < this.students.length; i++) {
-            if(this.students[i].id == id ){
+            if (this.students[i].id == id) {
                 return this.students[i];
             }
         }
@@ -20,29 +22,32 @@ class StudentDAO {
 
 
     addStudent(student) {
+        this.value++;
+        student.id = this.value;
         this.students.push(student);
     }
 
 
-    updateStudent(id, student ) {
+    updateStudent(id, student) {
         for (let i = 0; i < this.students.length; i++) {
-            if(this.students[i].id == id){
-                this.students[i].value = student.value;
+            if (this.students[i].id == id) {
+                this.students[i] = student;
+                this.students[i].id = id;
             }
         }
     }
 
     removeStudents(id) {
         for (let i = 0; i < this.students.length; i++) {
-            if(this.students[i].id == id){
+            if (this.students[i].id == id) {
                 this.students.splice(i, 1);
             }
         }
     }
 
 
-    showStudents(){
-        for (let i = 0; i <this.students.length ; i++) {
+    showStudents() {
+        for (let i = 0; i < this.students.length; i++) {
             console.log(this.students[i]);
         }
     }
