@@ -11,7 +11,7 @@ class FormationDAO {
          return this.formations;
     }
 
-    getOneBy(id){
+    getOneById(id){
         for (let i = 0; i < this.formations.length; i++) {
             if (this.formations[i].id == id) {
                 return this.formations[i];

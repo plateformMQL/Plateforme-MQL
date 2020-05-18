@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0d9f17-a5ed-41a6-8e83-1ddfe9752ead" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WebContent/js/dao/ActualityDAO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Actuality.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Concours.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/models/E-learning.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Projet introprenaraux.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/EventDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/EventDAO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/dao/FormationDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/FormationDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/JobDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/JobDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/LaureateDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/LaureateDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/PartnerDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/PartnerDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/ProfessorDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/ProfessorDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/StudentDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/StudentDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Formation.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Formation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/services/FormationServ.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/services/FormationServ.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/test.js" afterDir="false" />
     </list>
@@ -30,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +75,7 @@
       <workItem from="1589588121565" duration="19143000" />
       <workItem from="1589668509238" duration="20306000" />
       <workItem from="1589735192668" duration="1841000" />
-      <workItem from="1589750504851" duration="8249000" />
+      <workItem from="1589750504851" duration="15813000" />
     </task>
     <servers />
   </component>
@@ -115,5 +111,23 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="510" y="260" key="save.project.as.template.dialog/0.0.1280.689@0.0.1280.689" timestamp="1589586201573" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/WebContent/js/test.js</url>
+          <line>106</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
