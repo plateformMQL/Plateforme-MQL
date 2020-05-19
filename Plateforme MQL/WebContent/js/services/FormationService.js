@@ -105,12 +105,25 @@ class FormationService {
                     jobs[i].endDate,
                     jobs[i].duration,
                     jobs[i].subject,
-                    jobs[i].partner,
+                    jobs[i].partner = this.addPartnerToJob(jobs[i].partner),
                     jobs[i].type
                 ));
         }
 
         return table;
+    }
+
+    addPartnerToJob(partner){
+        return new Partner(
+            partner.id,
+            partner.name,
+            partner.address,
+            partner.activity,
+            partner.photo,
+            partner.description,
+            partner.phone,
+            partner.email,
+            partner.webSite);
     }
 
     addPartners(partners) {
@@ -135,6 +148,25 @@ class FormationService {
 
 
     addStudents(students) {
+        let table = [];
+        for (let i = 0; i < students.length; i++) {
+            table.push(
+                new Student(
+                    students[i].id,
+                    students[i].firstName,
+                    students[i].lastName,
+                    students[i].email,
+                    students[i].city,
+                    students[i].previousFormation,
+                    students[i].cne,
+                    students[i].cin
+                ));
+        }
+
+        return table;
+    }
+
+    addLaureates(students) {
         let table = [];
         for (let i = 0; i < students.length; i++) {
             table.push(

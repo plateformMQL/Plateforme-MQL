@@ -23,18 +23,18 @@ var formationDB = [
                 description: "desc2"
             }
         ],
-        actualities : [
+        actualities: [
             {
-                id : 1,
-                title : "act1",
-                subtitle : 'sub1',
-                description : "desc1"
+                id: 1,
+                title: "act1",
+                subtitle: 'sub1',
+                description: "desc1"
             },
             {
-                id : 2,
-                title : "act2",
-                subtitle : 'sub2',
-                description : "desc2"
+                id: 2,
+                title: "act2",
+                subtitle: 'sub2',
+                description: "desc2"
             }
         ],
         events: [
@@ -67,7 +67,20 @@ var formationDB = [
                 endDate: "date2",
                 duration: "duration1",
                 subject: "subject1",
-                type: "type1"
+                partner:
+                    {
+                        id: 2,
+                        name: "partner2",
+                        address: "adress2",
+                        activity: "activity2",
+                        photo: "photo2",
+                        description: "desc2",
+                        phone: "phone2",
+                        email: "umanis@email.com",
+                        webSite: "website2",
+                        type: "type1"
+                    }
+
             },
             {
                 id: 2,
@@ -88,7 +101,16 @@ var formationDB = [
                 city: "fes",
                 previousFormation: "l pro",
                 cne: "fffff",
-                cin: "ddefdf"
+                cin: "ddefdf",
+                jobs: [{
+                    id: 1,
+                    title: "stage1",
+                    beginDate: "date1",
+                    endDate: "date2",
+                    duration: "duration1",
+                    subject: "subject1",
+                    type: "type1"
+                }]
             },
             {
                 id: 2,
@@ -98,78 +120,88 @@ var formationDB = [
                 city: "fes",
                 previousFormation: "l pro",
                 cne: "fffff",
+                cin: "ddefdf",
+                jobs: [{
+                    id: 1,
+                    title: "embauche",
+                    beginDate: "date1",
+                    endDate: "date2",
+                    duration: "duration1",
+                    subject: "subject1",
+                    type: "type1"
+                }]
+            }
+        ],
+        partners: [
+            {
+                id: 1,
+                name: "partner1",
+                address: "adress1",
+                activity: "activity1",
+                photo: "photo1",
+                description: "desc1",
+                phone: "phone1",
+                email: "atos@email.com",
+                webSite: "website1"
+            },
+            {
+                id: 2,
+                name: "partner2",
+                address: "adress2",
+                activity: "activity2",
+                photo: "photo2",
+                description: "desc2",
+                phone: "phone2",
+                email: "umanis@email.com",
+                webSite: "website2"
+            }
+        ],
+        professors: [
+            {
+                id: 1,
+                firstName: "name1",
+                lastName: "lname1",
+                tel: "0986",
+                email: "email1",
+                subject: "subject1",
+                grade: "grade1",
+                type: "phe"
+            },
+            {
+                id: 2,
+                firstName: "name2",
+                lastName: "lname2",
+                tel: "0986",
+                email: "email1",
+                subject: "subject2",
+                grade: "grade2",
+                type: "ph2"
+            }
+        ],
+        students: [
+            {
+                id: 1,
+                firstName: "rhita",
+                lastName: "essafi",
+                email: "rhitaess@gmail.com",
+                city: "fes",
+                previousFormation: "smi",
+                cne: "fffff",
+                cin: "ddefdf"
+            },
+            {
+                id: 2,
+                firstName: "rhita2",
+                lastName: "essafi",
+                email: "rhitaess@gmail.com2",
+                city: "fes2",
+                previousFormation: "smi",
+                cne: "fffff",
                 cin: "ddefdf"
             }
-        ],
-        partners : [
-            {
-                id : 1,
-                name : "partner1",
-                address : "adress1",
-                activity : "activity1",
-                photo : "photo1",
-                description : "desc1",
-                phone : "phone1",
-                email : "atos@email.com",
-                webSite : "website1"
-            },
-            {
-                id : 2,
-                name : "partner2",
-                address : "adress2",
-                activity : "activity2",
-                photo : "photo2",
-                description : "desc2",
-                phone : "phone2",
-                email : "umanis@email.com",
-                webSite : "website2"
-            }
-        ],
-        professors : [
-            {
-                id : 1,
-                firstName : "name1",
-                lastName : "lname1",
-                tel : "0986",
-                email: "email1",
-                subject : "subject1",
-                grade : "grade1",
-                type : "phe"
-            },
-            {
-                id : 2,
-                firstName : "name2",
-                lastName : "lname2",
-                tel : "0986",
-                email: "email1",
-                subject : "subject2",
-                grade : "grade2",
-                type : "ph2"
-            }
-        ],
-        students : [
-            {
-                id : 1,
-                firstName : "rhita",
-                lastName : "essafi",
-                email : "rhitaess@gmail.com",
-                city : "fes",
-                previousFormation : "smi",
-                cne : "fffff",
-                cin : "ddefdf"
-            },
-            {
-                id : 2,
-                firstName : "rhita2",
-                lastName : "essafi",
-                email : "rhitaess@gmail.com2",
-                city : "fes2",
-                previousFormation : "smi",
-                cne : "fffff",
-                cin : "ddefdf"}
         ]
 
-},
+    },
     {
         id: 2,
         title: 'mql2',
@@ -194,18 +226,18 @@ var formationDB = [
                 description: "desc2"
             }
         ],
-        actualities : [
+        actualities: [
             {
-                id : 1,
-                title : "act1",
-                subtitle : 'sub1',
-                description : "desc1"
+                id: 1,
+                title: "act1",
+                subtitle: 'sub1',
+                description: "desc1"
             },
             {
-                id : 2,
-                title : "act2",
-                subtitle : 'sub2',
-                description : "desc2"
+                id: 2,
+                title: "act2",
+                subtitle: 'sub2',
+                description: "desc2"
             }
         ],
         events: [
@@ -272,72 +304,73 @@ var formationDB = [
                 cin: "ddefdf"
             }
         ],
-        partners : [
+        partners: [
             {
-                id : 1,
-                name : "partner1",
-                address : "adress1",
-                activity : "activity1",
-                photo : "photo1",
-                description : "desc1",
-                phone : "phone1",
-                email : "capegemini@email.com",
-                webSite : "website1"
+                id: 1,
+                name: "partner1",
+                address: "adress1",
+                activity: "activity1",
+                photo: "photo1",
+                description: "desc1",
+                phone: "phone1",
+                email: "capegemini@email.com",
+                webSite: "website1"
             },
             {
-                id : 2,
-                name : "partner2",
-                address : "adress2",
-                activity : "activity2",
-                photo : "photo2",
-                description : "desc2",
-                phone : "phone2",
-                email : "cgi@email.com",
-                webSite : "website2"
+                id: 2,
+                name: "partner2",
+                address: "adress2",
+                activity: "activity2",
+                photo: "photo2",
+                description: "desc2",
+                phone: "phone2",
+                email: "cgi@email.com",
+                webSite: "website2"
             }
         ],
-        professors : [
+        professors: [
             {
-                id : 1,
-                firstName : "name1",
-                lastName : "lname1",
-                tel : "0986",
+                id: 1,
+                firstName: "name1",
+                lastName: "lname1",
+                tel: "0986",
                 email: "email1",
-                subject : "subject1",
-                grade : "grade1",
-                type : "phe"
+                subject: "subject1",
+                grade: "grade1",
+                type: "phe"
             },
             {
-                id : 2,
-                firstName : "name2",
-                lastName : "lname2",
-                tel : "0986",
+                id: 2,
+                firstName: "name2",
+                lastName: "lname2",
+                tel: "0986",
                 email: "email1",
-                subject : "subject2",
-                grade : "grade2",
-                type : "ph2"
+                subject: "subject2",
+                grade: "grade2",
+                type: "ph2"
             }
         ],
-        students : [
+        students: [
             {
-                id : 1,
-                firstName : "rhita",
-                lastName : "essafi",
-                email : "rhitaess@gmail.com",
-                city : "fes",
-                previousFormation : "smi",
-                cne : "fffff",
-                cin : "ddefdf"
+                id: 1,
+                firstName: "rhita",
+                lastName: "essafi",
+                email: "rhitaess@gmail.com",
+                city: "fes",
+                previousFormation: "smi",
+                cne: "fffff",
+                cin: "ddefdf"
             },
             {
-                id : 2,
-                firstName : "rhita2",
-                lastName : "essafi",
-                email : "rhitaess@gmail.com2",
-                city : "fes2",
-                previousFormation : "smi",
-                cne : "fffff",
-                cin : "ddefdf"}
+                id: 2,
+                firstName: "rhita2",
+                lastName: "essafi",
+                email: "rhitaess@gmail.com2",
+                city: "fes2",
+                previousFormation: "smi",
+                cne: "fffff",
+                cin: "ddefdf"
+            }
         ]
     }
 ];
