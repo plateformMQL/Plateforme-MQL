@@ -1,6 +1,6 @@
 class Student {
-    constructor( firstName, lastName, email, city,previousFormation,  cne, cin) {
-        this.id = null;
+    constructor(id, firstName, lastName, email, city, previousFormation,  cne, cin) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

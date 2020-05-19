@@ -1,13 +1,14 @@
 class Formation {
 
-    constructor(title, subTitle, description, dateFondation) {
-        this.id = null;
+    constructor(id, title, subTitle, description, dateFondation) {
+        this.id = id;
         this.title = title;
         this.subTitle = subTitle;
         this.description = description;
         this.dateFondation = dateFondation;
         this.events = [];
         this.activities = [];
+        this.actualities = [];
         this.partners = [];
         this.students = [];
         this.professors = [];

@@ -1,54 +1,4 @@
-class FormationDAO {
-
-   /* value = 0;
-
-    constructor() {
-        this.formations = [];
-    }
-
-
-    getAll() {
-        return this.formations;
-    }
-
-    getOneById(id) {
-        for (let i = 0; i < this.formations.length; i++) {
-            if (this.formations[i].id == id) {
-                return this.formations[i];
-            }
-        }
-        return null;
-    }
-
-
-    add(formation) {
-        this.value++;
-        formation.id = this.value;
-        this.formations.push(formation);
-    }
-
-
-    update(id, formation) {
-        for (let i = 0; i < this.formations.length; i++) {
-            if (this.formations[i].id == id) {
-                this.formations[i] = formation;
-                this.formations[i].id = id;
-            }
-        }
-    }
-
-    remove(id) {
-        for (let i = 0; i < this.formations.length; i++) {
-            if (this.formations[i].id == id) {
-                this.formations.splice(i, 1);
-            }
-        }
-    }
-
-    show() {
-        for (let i = 0; i < this.formations.length; i++) {
-            console.log(this.formations[i]);
-        }}*/
+class FormationService {
 
     constructor(db) {
         this.formations = [];
@@ -97,7 +47,7 @@ class FormationDAO {
             table .push(
                 new Activity(
                     activities[i].id, activities[i].title, activities[i].subtitle, activities[i].photo, activities[i].concept, activities[i].description
-        ));
+                ));
         }
 
         return table ;
@@ -132,9 +82,9 @@ class FormationDAO {
         let table  = [];
         for (let i = 0; i < jobs.length; i++) {
             table .push(
-               new Job(
-                   jobs[i].id, jobs[i].title, jobs[i].beginDate, jobs[i].endDate, jobs[i].duration, jobs[i].subject, jobs[i].partner, jobs[i].type
-               ));
+                new Job(
+                    jobs[i].id, jobs[i].title, jobs[i].beginDate, jobs[i].endDate, jobs[i].duration, jobs[i].subject, jobs[i].partner, jobs[i].type
+                ));
         }
 
         return table ;
@@ -144,9 +94,9 @@ class FormationDAO {
         let table = [];
         for (let i = 0; i < partners.length; i++) {
             table .push(
-               new Partner(
-                   partners[i].id, partners[i].name, partners[i].address, partners[i].activity, partners[i].photo, partners[i].description, partners[i].phone, partners[i].email, partners[i].webSite
-               ));
+                new Partner(
+                    partners[i].id, partners[i].name, partners[i].address, partners[i].activity, partners[i].photo, partners[i].description, partners[i].phone, partners[i].email, partners[i].webSite
+                ));
         }
 
         return table ;
@@ -157,9 +107,9 @@ class FormationDAO {
         let table = [];
         for (let i = 0; i < students.length; i++) {
             table .push(
-              new Student(
-                  students[i].id, students[i].firstName, students[i].lastName, students[i].email, students[i].city, students[i].previousFormation,  students[i].cne, students[i].cin
-              ));
+                new Student(
+                    students[i].id, students[i].firstName, students[i].lastName, students[i].email, students[i].city, students[i].previousFormation,  students[i].cne, students[i].cin
+                ));
         }
 
         return table ;

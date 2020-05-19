@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0d9f17-a5ed-41a6-8e83-1ddfe9752ead" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/js/dao/ActualityDAO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Actuality.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Concours.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/js/models/E-learning.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/js/models/Projet introprenaraux.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/formationDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/jobDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/laureateDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/partnerDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/professorDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/data/studentDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/js/services/FormationService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/css/Home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/dao/EventDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/EventDAO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/dao/FormationDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/dao/FormationDAO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Actuality.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Actuality.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Concours.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/data/activityDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/E-learning.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/data/actualityDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Formation.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Formation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Job.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Job.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Partner.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Partner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Professor.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Professor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Projet introprenaraux.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/data/eventDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/models/Student.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/models/Student.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/services/FormationServ.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/services/FormationServ.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/test.js" afterDir="false" />
     </list>
@@ -47,15 +64,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/js/data" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\Plateforme MQL\WebContent\js\data" />
       <recent name="D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\Plateforme MQL\WebContent\js" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MQl_MS\semestre2\JavaEE\IngénierieWeb\Plateforme MQL\WebContent\js" />
     </key>
   </component>
@@ -75,7 +93,7 @@
       <workItem from="1589588121565" duration="19143000" />
       <workItem from="1589668509238" duration="20306000" />
       <workItem from="1589735192668" duration="1841000" />
-      <workItem from="1589750504851" duration="15813000" />
+      <workItem from="1589750504851" duration="40028000" />
     </task>
     <servers />
   </component>
@@ -87,10 +105,14 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1589585272319" />
-    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589609311751">
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589867469585">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589609311751" />
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589867469585" />
+    <state x="421" y="104" key="FileChooserDialogImpl" timestamp="1589852525278">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="104" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589852525278" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1589609878406">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -111,23 +133,5 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="510" y="260" key="save.project.as.template.dialog/0.0.1280.689@0.0.1280.689" timestamp="1589586201573" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/WebContent/js/dao/ActivityDAO.js</url>
-          <line>16</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/WebContent/js/test.js</url>
-          <line>106</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

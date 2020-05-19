@@ -2,8 +2,19 @@ class EventDAO {
 
     value = 0;
 
-    constructor() {
+    constructor(db) {
         this.events = [];
+        this.load(db);
+    }
+
+    load(db) {
+        for (let i = 0; i < db.length; i++) {
+            this.add(
+                new Event(
+                    db[i].id, db[i].title, db[i].subTitle, db[i].concept, db[i].photo, db[i].video, db[i].date, db[i].description,
+                    db[i].formation_id
+                ));
+        }
     }
 
     getAllEvents() {
@@ -19,9 +30,7 @@ class EventDAO {
         return null;
     }
 
-    addEvent(event) {
-        this.value++;
-        event.id = this.value;
+    add(event) {
         this.events.push(event);
     }
 
@@ -47,5 +56,15 @@ class EventDAO {
         for (let i = 0; i < this.events.length; i++) {
             console.log(this.events[i]);
         }
+    }
+
+    getEventsByFormation(id) {
+        let events = [];
+        for (let i = 0; i < this.events.length; i++) {
+            if (this.events[i].formation_id == id) {
+                events.push(this.events[i]);
+            }
+        }
+        return events;
     }
 }

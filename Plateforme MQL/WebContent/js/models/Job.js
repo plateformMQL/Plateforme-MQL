@@ -1,6 +1,6 @@
 class Job {
-    constructor( title, beginDate, endDate, duration, subject, partner, type) {
-        this.id = null;
+    constructor( id, title, beginDate, endDate, duration, subject, partner, type) {
+        this.id = id;
         this.title = title;
         this.beginDate = beginDate ;
         this.endDate = endDate;

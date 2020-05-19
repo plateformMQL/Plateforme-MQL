@@ -20,10 +20,10 @@ class ActivityDAO {
         return null;
     }
 
-    addActivity(actvity) {
+    addActivity(activity) {
         this.value++;
-        actvity.id = this.value;
-        this.activities.push(actvity);
+        activity.id = this.value;
+        this.activities.push(activity);
     }
 
     updateActivity(id, activity) {

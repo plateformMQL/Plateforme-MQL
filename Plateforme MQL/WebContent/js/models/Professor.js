@@ -1,6 +1,7 @@
 class Professor {
 
-    constructor(firstName, lastName, tel, email, subject, grade, type) {
+    constructor(id, firstName, lastName, tel, email, subject, grade, type) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.tel = tel;
