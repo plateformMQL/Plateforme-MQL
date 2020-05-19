@@ -16,7 +16,7 @@ class FormationService {
         let formation = new Formation(
             db.id, db.title, db.subTitle, db.description, db.dateFondation
         );
-        if(db.events != null && db.activities != null){
+        if (db.events != null && db.activities != null) {
             formation.events = this.addEvents(db.events);
             formation.activities = this.addActivities(db.activities);
             formation.actualities = this.addActualities(db.actualities);
@@ -42,88 +42,133 @@ class FormationService {
     }
 
     addActivities(activities) {
-        let table  = [];
+        let table = [];
         for (let i = 0; i < activities.length; i++) {
-            table .push(
+            table.push(
                 new Activity(
-                    activities[i].id, activities[i].title, activities[i].subtitle, activities[i].photo, activities[i].concept, activities[i].description
+                    activities[i].id,
+                    activities[i].title,
+                    activities[i].subtitle,
+                    activities[i].photo,
+                    activities[i].concept,
+                    activities[i].description
                 ));
         }
 
-        return table ;
+        return table;
     }
 
     addActualities(actualities) {
-        let table  = [];
+        let table = [];
         for (let i = 0; i < actualities.length; i++) {
-            table .push(
+            table.push(
                 new Actuality(
-                    actualities[i].id, actualities[i].title, actualities[i].subtitle, actualities[i].description, actualities[i].event
+                    actualities[i].id,
+                    actualities[i].title,
+                    actualities[i].subtitle,
+                    actualities[i].description,
+                    actualities[i].event
                 ));
         }
 
-        return table ;
+        return table;
     }
 
-    addEvents(events){
-        let table  = [];
+    addEvents(events) {
+        let table = [];
         for (let i = 0; i < events.length; i++) {
-            table .push(
+            table.push(
                 new Event(
-                    events[i].id, events[i].title, events[i].subTitle, events[i].concept, events[i].photo, events[i].video, events[i].date, events[i].description
+                    events[i].id,
+                    events[i].title,
+                    events[i].subTitle,
+                    events[i].concept,
+                    events[i].photo,
+                    events[i].video,
+                    events[i].date,
+                    events[i].description
                 ));
         }
 
-        return table ;
+        return table;
     }
 
 
-    addJobs(jobs){
-        let table  = [];
+    addJobs(jobs) {
+        let table = [];
         for (let i = 0; i < jobs.length; i++) {
-            table .push(
+            table.push(
                 new Job(
-                    jobs[i].id, jobs[i].title, jobs[i].beginDate, jobs[i].endDate, jobs[i].duration, jobs[i].subject, jobs[i].partner, jobs[i].type
+                    jobs[i].id,
+                    jobs[i].title,
+                    jobs[i].beginDate,
+                    jobs[i].endDate,
+                    jobs[i].duration,
+                    jobs[i].subject,
+                    jobs[i].partner,
+                    jobs[i].type
                 ));
         }
 
-        return table ;
+        return table;
     }
 
-    addPartners(partners){
+    addPartners(partners) {
         let table = [];
         for (let i = 0; i < partners.length; i++) {
-            table .push(
+            table.push(
                 new Partner(
-                    partners[i].id, partners[i].name, partners[i].address, partners[i].activity, partners[i].photo, partners[i].description, partners[i].phone, partners[i].email, partners[i].webSite
+                    partners[i].id,
+                    partners[i].name,
+                    partners[i].address,
+                    partners[i].activity,
+                    partners[i].photo,
+                    partners[i].description,
+                    partners[i].phone,
+                    partners[i].email,
+                    partners[i].webSite
                 ));
         }
 
-        return table ;
+        return table;
     }
 
 
-    addStudents(students){
+    addStudents(students) {
         let table = [];
         for (let i = 0; i < students.length; i++) {
-            table .push(
+            table.push(
                 new Student(
-                    students[i].id, students[i].firstName, students[i].lastName, students[i].email, students[i].city, students[i].previousFormation,  students[i].cne, students[i].cin
+                    students[i].id,
+                    students[i].firstName,
+                    students[i].lastName,
+                    students[i].email,
+                    students[i].city,
+                    students[i].previousFormation,
+                    students[i].cne,
+                    students[i].cin
                 ));
         }
 
-        return table ;
+        return table;
     }
 
     addProfessors(professors) {
         let table = [];
         for (let i = 0; i < professors.length; i++) {
-            table .push(
+            table.push(
                 new Professor(
-                    professors[i].id, professors[i].firstName, professors[i].lastName, professors[i].tel, professors[i].email, professors[i].subject, professors[i].grade, professors[i].type
+                    professors[i].id,
+                    professors[i].firstName,
+                    professors[i].lastName,
+                    professors[i].tel,
+                    professors[i].email,
+                    professors[i].subject,
+                    professors[i].grade,
+                    professors[i].type
                 ));
         }
 
-        return table ;
+        return table;
     }
 }
