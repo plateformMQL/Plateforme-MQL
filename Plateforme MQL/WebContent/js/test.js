@@ -83,12 +83,9 @@ function test() {
             console.log(activities[i]);
         }
     */
-
-    var laureate = new Laureate("a1", "a2", "a3", "a4", "a5");
-    laureate.jobs.push(new Job("b1", "b2", "b3", "b4", "b5", "b6", "b7"));
-//console.log(laureate);
-
-    let activityDAO = new ActivityDAO();
+    /* var formation = new Formation("mql", "master ", "qualité logiciel", "2005");
+     var formation2 = new Formation("mql", "master ", "qualité logiciel", "2005");
+        let activityDAO = new ActivityDAO();
     let jobDAO = new JobDAO();
     let laureateDAO = new LaureateDAO();
     let partnerDAO = new PartnerDAO();
@@ -97,10 +94,6 @@ function test() {
     let formationDAO = new FormationDAO(formationDB);
     let actualityDAO = new ActualityDAO();
 
-    var formationService = new FormationService(formationDB);
-
-    /* var formation = new Formation("mql", "master ", "qualité logiciel", "2005");
-     var formation2 = new Formation("mql", "master ", "qualité logiciel", "2005");
      var job = new Job("eeeeee", "fzffzefzef", "zfeezfzefezfq", "zdzdazdaz", "adzdzdz", "sdsddsd", "zdqdqdqd");
      var activ1 = new Activity("remise", "remise2", "src", "ffggghgg","ddddd");
      var activ2 = new Activity("remise2", "remise2", "src", "ffggghgg","ddddd");
@@ -142,7 +135,7 @@ function test() {
     }
 */
 
-
+    var formationService = new FormationService(formationDB);
     console.log(formationService);
 }
 
