@@ -9,6 +9,5 @@ class Event {
         this.video = video;
         this.date = date;
         this.description = description;
-        this.actualities = [];
     }
 }

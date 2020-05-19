@@ -28,13 +28,33 @@ var formationDB = [
                 id: 1,
                 title: "act1",
                 subtitle: 'sub1',
-                description: "desc1"
+                description: "desc1",
+                event: {
+                    id: 1,
+                    title: "event1",
+                    subTitle: "sub1",
+                    concept: "concept1",
+                    photo: "phtp",
+                    video: "video",
+                    date: "date",
+                    description: "description",
+                }
             },
             {
                 id: 2,
                 title: "act2",
                 subtitle: 'sub2',
-                description: "desc2"
+                description: "desc2",
+                event: {
+                    id: 1,
+                    title: "event1",
+                    subTitle: "sub1",
+                    concept: "concept1",
+                    photo: "phtp",
+                    video: "video",
+                    date: "date",
+                    description: "description",
+                }
             }
         ],
         events: [
@@ -102,15 +122,50 @@ var formationDB = [
                 previousFormation: "l pro",
                 cne: "fffff",
                 cin: "ddefdf",
-                jobs: [{
+                job: [{
                     id: 1,
-                    title: "stage1",
+                    title: "job",
                     beginDate: "date1",
                     endDate: "date2",
                     duration: "duration1",
                     subject: "subject1",
-                    type: "type1"
-                }]
+                    partner:
+                        {
+                            id: 2,
+                            name: "partner2",
+                            address: "adress2",
+                            activity: "activity2",
+                            photo: "photo2",
+                            description: "desc2",
+                            phone: "phone2",
+                            email: "umanis@email.com",
+                            webSite: "website2",
+                            type: "type1"
+                        }
+
+                },
+                    {
+                        id: 3,
+                        title: "job",
+                        beginDate: "date1",
+                        endDate: "date2",
+                        duration: "duration1",
+                        subject: "subject1",
+                        partner:
+                            {
+                                id: 2,
+                                name: "partner2",
+                                address: "adress2",
+                                activity: "activity2",
+                                photo: "photo2",
+                                description: "desc2",
+                                phone: "phone2",
+                                email: "umanis@email.com",
+                                webSite: "website2",
+                                type: "type1"
+                            }
+
+                    }]
             },
             {
                 id: 2,
@@ -128,7 +183,20 @@ var formationDB = [
                     endDate: "date2",
                     duration: "duration1",
                     subject: "subject1",
-                    type: "type1"
+                    type: "type1",
+                    partner:
+                        {
+                            id: 2,
+                            name: "partner2",
+                            address: "adress2",
+                            activity: "activity2",
+                            photo: "photo2",
+                            description: "desc2",
+                            phone: "phone2",
+                            email: "umanis@email.com",
+                            webSite: "website2",
+                            type: "type1"
+                        }
                 }]
             }
         ],

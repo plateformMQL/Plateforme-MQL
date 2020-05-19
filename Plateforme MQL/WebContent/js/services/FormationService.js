@@ -24,6 +24,7 @@ class FormationService {
             formation.partners = this.addPartners(db.partners);
             formation.professors = this.addProfessors(db.professors);
             formation.students = this.addStudents(db.students);
+            formation.laureates= this.addLaureates(db.laureates);
         }
         this.formations.push(formation);
     }
@@ -105,7 +106,7 @@ class FormationService {
                     jobs[i].endDate,
                     jobs[i].duration,
                     jobs[i].subject,
-                    jobs[i].partner = this.addPartnerToJob(jobs[i].partner),
+                    jobs[i].partner,
                     jobs[i].type
                 ));
         }
@@ -113,18 +114,18 @@ class FormationService {
         return table;
     }
 
-    addPartnerToJob(partner){
-        return new Partner(
-            partner.id,
-            partner.name,
+    /*addPartnerToJob(partner){
+        let partner1 = new Partner(partner.id,
+            partners.name,
             partner.address,
             partner.activity,
             partner.photo,
-            partner.description,
-            partner.phone,
-            partner.email,
-            partner.webSite);
-    }
+            partners[i].description,
+            partners[i].phone,
+            partners[i].email,
+            partners[i].webSite);
+        return partner1;
+    }*/
 
     addPartners(partners) {
         let table = [];
@@ -166,19 +167,20 @@ class FormationService {
         return table;
     }
 
-    addLaureates(students) {
+    addLaureates(laureates) {
         let table = [];
-        for (let i = 0; i < students.length; i++) {
+        for (let i = 0; i < laureates.length; i++) {
             table.push(
-                new Student(
-                    students[i].id,
-                    students[i].firstName,
-                    students[i].lastName,
-                    students[i].email,
-                    students[i].city,
-                    students[i].previousFormation,
-                    students[i].cne,
-                    students[i].cin
+                new Laureate(
+                    laureates[i].id,
+                    laureates[i].firstName,
+                    laureates[i].lastName,
+                    laureates[i].email,
+                    laureates[i].city,
+                    laureates[i].previousFormation,
+                    laureates[i].cne,
+                    laureates[i].cin,
+                    laureates[i].job
                 ));
         }
 

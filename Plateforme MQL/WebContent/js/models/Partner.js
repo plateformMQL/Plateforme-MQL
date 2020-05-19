@@ -10,11 +10,6 @@ class Partner {
         this.phone = phone;
         this.email = email;
         this.webSite = webSite;
-        this.laureates = [];
-    }
-
-    addLaureates(laureate) {
-        this.laureates.push(laureate);
     }
 
 
